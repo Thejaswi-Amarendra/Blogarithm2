@@ -1,0 +1,71 @@
+.header {
+  margin-top: 60px;
+  padding-bottom: 2%;
+  background-color: rgb(120, 120, 120);
+  
+  border: solid;
+  border-color: darkslategrey;
+  
+}
+
+.header:hover{
+  background-color: rgb(117, 94, 94);
+}
+.headerTitles {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  height: 50%;
+  justify-content: center;
+  font-family: "Lora", serif;
+  
+
+}
+p.para {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 100px;
+  
+  background: linear-gradient(to bottom, rgb(12, 16, 20), rgb(12, 16, 20) 60%, rgb(208, 208, 208)0%, rgb(208, 208, 208) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+.headerTitleSm {
+  position: absolute;
+  top: 5%;
+  font-size: 20px;
+}
+
+.headerTitleLg {
+  position: relative;
+  top: 5%;
+  font-size: 100px;
+}
+.headerTitleLg::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: rgb(0, 0, 0);
+  bottom: 9px;
+  transition: all 0.2s ease-out;
+}
+p.para:hover {
+  background-position: 0 11px;
+}
+span:hover:before {
+  transform: translateY(35px)
+}
+.headerImg {
+  width: 100%;
+  height: 450px;
+  margin-top: 80px;
+  object-fit: cover;
+}
